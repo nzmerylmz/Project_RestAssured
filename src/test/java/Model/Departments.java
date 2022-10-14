@@ -2,18 +2,26 @@ package Model;
 
 public class Departments {
 
+    private String id;
     private String name;
     private String code;
-    private String id;
     private boolean active;
-    private String school;
+    private String SchoolId;
 
-    public String getSchool() {
-        return school;
+    public String getSchoolId() {
+        return SchoolId;
     }
 
-    public void setSchool(String school) {
-        this.school = school;
+    public void setSchoolId(String schoolId) {
+        this.SchoolId = schoolId;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -32,15 +40,6 @@ public class Departments {
         this.code = code;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-
     public boolean isActive() {
         return active;
     }
@@ -48,5 +47,7 @@ public class Departments {
     public void setActive(boolean active) {
         this.active = active;
     }
+
+
 }
 

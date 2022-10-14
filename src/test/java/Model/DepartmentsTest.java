@@ -24,7 +24,7 @@ public class DepartmentsTest {
         credential.put("password", "Richfield2020!");
         credential.put("rememberMe", "true");
 
-        cookies=
+        cookies =
                 given()
                         .contentType(ContentType.JSON)
                         .body(credential)
@@ -43,26 +43,26 @@ public class DepartmentsTest {
     String countryName;
     String countryCode;
 
-    String schoolID;
+    String schoolId;
 
-    boolean active;
-
+    boolean Active;
 
 
     @Test
-    public void createDepartments()
-    {
-        countryName=getRandomName();
-        countryCode=getRandomCode();
-
-
-        Departments departments=new Departments();
+    public void createDepartments() {
+        countryName = getRandomName();
+        countryCode = getRandomCode();
+        schoolId = "5fe07e4fb064ca29931236a5";
+        Departments departments = new Departments();
         departments.setName(countryName); // generateCountrName
         departments.setCode(countryCode); // generateCountrCode
         departments.setActive(true);
-        departments.setSchool(schoolID);
+        departments.setSchoolId(schoolId);
+        departments.setSchoolId(countryName);
+        departments.setSchoolId(countryCode);
 
-        departmentsID=
+
+        departmentsID =
                 given()
                         .cookies(cookies)
                         .contentType(ContentType.JSON)
@@ -84,14 +84,8 @@ public class DepartmentsTest {
     }
 
     public String getRandomCode() {
-        return RandomStringUtils.randomAlphabetic(3).toLowerCase();
+        return RandomStringUtils.randomAlphabetic(5).toLowerCase();
     }
-    public String schoolID(){
-        return "5fe07e4fb064ca29931236a5";
-    }
-
-
-
 
 
 }
