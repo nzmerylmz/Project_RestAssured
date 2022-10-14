@@ -182,6 +182,7 @@ public class AttestationsTest {
                 .statusCode(400)
                 .body("message", equalTo("Can't find Attestation"))
         ;
+
     }
 
 
