@@ -11,9 +11,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <argLine>-Duser.language=en</argLine>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <argLine>-Duser.language=en</argLine>
     </properties>
 
     <dependencies>
@@ -41,12 +39,6 @@
             <version>2.10.2</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>4.1.0</version>
-        </dependency>
-
     </dependencies>
     <build>
         <plugins>
@@ -62,23 +54,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M1</version>
-                <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-
-
-
 </project>

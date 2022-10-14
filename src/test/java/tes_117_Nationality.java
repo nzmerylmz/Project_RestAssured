@@ -1,4 +1,3 @@
-package Model;
 import Model.Nationality;
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookies;
@@ -11,7 +10,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class NationalityTest {
+public class tes_117_Nationality {
 
     Cookies cookies;
 
