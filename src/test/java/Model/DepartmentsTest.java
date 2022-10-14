@@ -60,6 +60,7 @@ public class DepartmentsTest {
         departments.setSchoolId(schoolId);
         departments.setSchoolId(countryName);
         departments.setSchoolId(countryCode);
+        departments.setSchoolId(departmentsID);
 
 
         departmentsID =
