@@ -1,19 +1,16 @@
 import Model.Positions;
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookies;
-import io.restassured.specification.Argument;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.*;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.equalTo;
 
-public class PositionsTest {
+public class tes_110_Positions {
     Positions positions= new Positions();
 
     Cookies cookies;
