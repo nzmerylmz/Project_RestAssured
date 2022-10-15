@@ -43,24 +43,24 @@ public class DepartmentsTest {
     String countryName;
     String countryCode;
 
-    String schoolId;
-
     boolean Active;
+    public  Map<String ,String> schoolId(){
+        Map<String,String > school = new HashMap<>();
+        school.put("id","5fe07efb064ca29931236a5");
+
+        return school;
+    }
 
 
     @Test
     public void createDepartments() {
         countryName = getRandomName();
         countryCode = getRandomCode();
-        schoolId = "5fe07e4fb064ca29931236a5";
         Departments departments = new Departments();
         departments.setName(countryName); // generateCountrName
         departments.setCode(countryCode); // generateCountrCode
+        departments.setSchoolId(schoolId());
         departments.setActive(true);
-        departments.setSchoolId(schoolId);
-        departments.setSchoolId(countryName);
-        departments.setSchoolId(countryCode);
-        departments.setSchoolId(departmentsID);
 
 
         departmentsID =

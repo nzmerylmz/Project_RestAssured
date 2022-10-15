@@ -1,5 +1,7 @@
 package Model;
 
+import java.util.Map;
+
 public class Departments {
 
     private String id;
@@ -12,8 +14,8 @@ public class Departments {
         return SchoolId;
     }
 
-    public void setSchoolId(String schoolId) {
-        this.SchoolId = schoolId;
+    public void setSchoolId(Map<String, String> schoolId) {
+        this.SchoolId = String.valueOf(schoolId);
     }
 
     public String getId() {
