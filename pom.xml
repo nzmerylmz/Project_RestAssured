@@ -40,14 +40,7 @@
             <version>2.10.2</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>4.1.0</version>
-        </dependency>
-
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -62,8 +55,5 @@
             </plugin>
         </plugins>
     </build>
-
-
-
 
 </project>
