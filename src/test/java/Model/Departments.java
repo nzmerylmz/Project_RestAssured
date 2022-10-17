@@ -1,21 +1,41 @@
 package Model;
+import Model.School;
 
+import java.util.Arrays;
 import java.util.Map;
 
 public class Departments {
 
+    private boolean active;
+    private String code;
+    private String[] constans;
     private String id;
     private String name;
-    private String code;
-    private boolean active;
-    private String SchoolId;
+    private School school;
+    private String[] sections;
 
-    public String getSchoolId() {
-        return SchoolId;
+    public boolean isActive() {
+        return active;
     }
 
-    public void setSchoolId(Map<String, String> schoolId) {
-        this.SchoolId = String.valueOf(schoolId);
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String[] getConstans() {
+        return constans;
+    }
+
+    public void setConstans(String[] constans) {
+        this.constans = constans;
     }
 
     public String getId() {
@@ -34,22 +54,33 @@ public class Departments {
         this.name = name;
     }
 
-    public String getCode() {
-        return code;
+    public School getSchool() {
+        return school;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setSchool(School school) {
+        this.school = school;
     }
 
-    public boolean isActive() {
-        return active;
+    public String[] getSections() {
+        return sections;
     }
 
-    public void setActive(boolean active) {
-        this.active = active;
+    public void setSections(String[] sections) {
+        this.sections = sections;
     }
 
-
+    @Override
+    public String toString() {
+        return "Departments{" +
+                "active=" + active +
+                ", code='" + code + '\'' +
+                ", constans=" + Arrays.toString(constans) +
+                ", id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", school=" + school +
+                ", sections=" + Arrays.toString(sections) +
+                '}';
+    }
 }
 
