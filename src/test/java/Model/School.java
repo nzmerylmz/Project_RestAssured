@@ -1,11 +1,8 @@
 package Model;
 
 public class School {
-    private String id;
 
-    public School(String id){
-        this.id=id;
-    }
+    private String id;
 
     public String getId() {
         return id;
@@ -14,4 +11,5 @@ public class School {
     public void setId(String id) {
         this.id = id;
     }
+
 }
